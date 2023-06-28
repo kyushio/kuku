@@ -8,10 +8,14 @@
 
   <ItemGroup>
     <Content Remove="web.config" />
+    <Content Remove="wwwroot\css\bruno.css" />
+    <Content Remove="wwwroot\js\bruno.js" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="web.config" />
+    <None Include="wwwroot\css\bruno.css" />
+    <None Include="wwwroot\js\bruno.js" />
   </ItemGroup>
 
 </Project>
