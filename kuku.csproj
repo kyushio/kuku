@@ -1,17 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
-
-  <Target Name="BeforeBuild">
-    <ItemGroup>
-      <Content Include="web.config" />
-      <Content Include="wwwroot\css\bruno.css" />
-      <Content Include="wwwroot\js\bruno.js" />
-    </ItemGroup>
-  </Target>
-  
+	<Target Name="BeforeBuild">
+		<ItemGroup>
+			<Content Include="web.config" />
+			<Content Include="wwwroot\css\*.css" />
+			<Content Include="wwwroot\js\*.js" />
+			<Content Include="wwwroot\img\*" />
+		</ItemGroup>
+	</Target>
 </Project>
